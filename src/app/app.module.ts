@@ -10,6 +10,7 @@ import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
 import { ContactoComponent } from './contacto/contacto.component';
+import { ResponsiveDirective } from './directivas/responsive.directive';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { ContactoComponent } from './contacto/contacto.component';
     ExperienciaComponent,
     HabilidadesComponent,
     ProyectosComponent,
-    ContactoComponent
+    ContactoComponent,
+    ResponsiveDirective
   ],
   imports: [
     BrowserModule,
