@@ -1,0 +1,51 @@
+:host {
+  display: block;
+  color: white;
+  padding: 2rem 3rem;
+}
+
+.carrusel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.proyecto {
+  margin: 3rem;
+  width: 400px;
+  height: 500px;
+  border: 1px solid white;
+}
+
+.proyecto img {
+  width: 100%;
+  border-bottom: 5px solid var(--green);
+}
+
+.proyecto_body {
+  padding: 2rem;
+}
+
+h5 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: var(--green);
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+a {
+  border: 1px solid var(--green);
+  padding: 0.4rem;
+  background-color: var(--dark-gray);
+  text-decoration: none;
+  color: var(--green);
+  font-weight: 400;
+}
+
+a:hover {
+  background-color: var(--green);
+  color: var(--dark-gray);
+}
