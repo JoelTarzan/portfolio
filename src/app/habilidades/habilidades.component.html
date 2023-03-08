@@ -1,1 +1,15 @@
-<p>habilidades works!</p>
+<div class="container">
+  <h1>Habilidades</h1>
+
+  <section *ngFor="let habilidades of habilidadesLista">
+    <h2>{{habilidades.nombre}}</h2>
+    <h4>{{habilidades.nivel}}</h4>
+
+    <div class="rating">
+      <div class="bar">
+        <div [ngStyle]="{'width': habilidades.porcentaje+'%'}"></div>
+      </div>
+      <div>{{habilidades.porcentaje}}%</div>
+    </div>
+  </section>
+</div>

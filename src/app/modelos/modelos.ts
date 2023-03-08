@@ -10,3 +10,9 @@ export interface ExperienciaLaboral {
   empresa: string;
   duracion: string;
 }
+
+export interface Habilidad {
+  nombre: string;
+  nivel: string;
+  porcentaje: number;
+}
