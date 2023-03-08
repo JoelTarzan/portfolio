@@ -1,1 +1,24 @@
-<p>informacion-personal works!</p>
+<div class="container">
+  <h1 class="title">
+    <span>Información Personal</span>
+  </h1>
+
+  <table>
+    <tbody>
+      <tr *ngFor="let dato of misDatos | keyvalue : returnZero; let i = index">
+        <td class="flex">
+          <span class="misDatos-key">{{ dato.key }}</span>
+          <ng-template *ngIf="i > 2; then thenBlock else elseBlock"></ng-template>
+          <ng-template #thenBlock><a href="{{ dato.value }}">{{ dato.value }}</a></ng-template>
+          <ng-template #elseBlock>{{ dato.value }}</ng-template>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <section>
+    <p *ngFor="let sentence of sobreMi">
+      {{sentence}}
+    </p>
+  </section>
+</div>
