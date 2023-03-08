@@ -1,1 +1,12 @@
-<p>experiencia works!</p>
+<div class="container">
+  <h1>Experiencia Laboral</h1>
+
+  <ul>
+    <li *ngFor="let experiencia of experienciaLista">
+      <h2>{{experiencia.puesto}}</h2>
+      <h3>{{experiencia.empresa}}</h3>
+      <h4>{{experiencia.duracion}}</h4>
+      <ul></ul>
+    </li>
+  </ul>
+</div>
