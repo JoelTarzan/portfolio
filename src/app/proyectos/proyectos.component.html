@@ -3,51 +3,14 @@
 
   <div class="carrusel">
 
-    <div class="proyecto">
-      <img src="../../assets/todoCrud.jpg" alt="">
+    <div class="proyecto" *ngFor="let proyecto of proyectos">
+      <img src="{{ proyecto.imgUrl }}" alt="Imagen del proyecto">
       <div class="proyecto_body">
-        <h5>To Do List</h5>
-        <p>Proyecto hecho en Laravel, con un sistema de Login y un Crud para añadir y editar distintas tareas</p>
-        <a href="">IR AL PROYECTO</a>
+        <h5>{{ proyecto.titulo }}</h5>
+        <p>{{ proyecto.descripcion }}</p>
+        <a href="{{ proyecto.proyectoUrl }}">IR AL PROYECTO</a>
       </div>
     </div>
-
-    <div class="proyecto">
-      <img src="../../assets/todoCrud.jpg" alt="">
-      <div class="proyecto_body">
-        <h5>Titulo del proyecto</h5>
-        <p>Descripcion del proyecto</p>
-        <a href="">Link al proyecto</a>
-      </div>
-    </div>
-
-    <div class="proyecto">
-      <img src="../../assets/todoCrud.jpg" alt="">
-      <div class="proyecto_body">
-        <h5>Titulo del proyecto</h5>
-        <p>Descripcion del proyecto</p>
-        <a href="">Link al proyecto</a>
-      </div>
-    </div>
-
-    <div class="proyecto">
-      <img src="../../assets/todoCrud.jpg" alt="">
-      <div class="proyecto_body">
-        <h5>Titulo del proyecto</h5>
-        <p>Descripcion del proyecto</p>
-        <a href="">Link al proyecto</a>
-      </div>
-    </div>
-    <div class="proyecto">
-      <img src="../../assets/todoCrud.jpg" alt="">
-      <div class="proyecto_body">
-        <h5>Titulo del proyecto</h5>
-        <p>Descripcion del proyecto</p>
-        <a href="">Link al proyecto</a>
-      </div>
-    </div>
-
-
 
   </div>
 

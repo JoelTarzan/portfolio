@@ -16,3 +16,10 @@ export interface Habilidad {
   nivel: string;
   porcentaje: number;
 }
+
+export interface Proyecto {
+  titulo: string;
+  descripcion: string;
+  imgUrl: string;
+  proyectoUrl: string;
+}
