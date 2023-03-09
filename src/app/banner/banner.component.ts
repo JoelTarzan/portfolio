@@ -8,10 +8,8 @@ import {BreakpointObserver, Breakpoints} from "@angular/cdk/layout";
 })
 export class BannerComponent implements OnInit {
   constructor(private breakpointObserver: BreakpointObserver) {
-
   }
 
   ngOnInit(): void {
-
   }
 }

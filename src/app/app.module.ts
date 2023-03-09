@@ -9,7 +9,6 @@ import { EducacionComponent } from './educacion/educacion.component';
 import { ExperienciaComponent } from './experiencia/experiencia.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ProyectosComponent } from './proyectos/proyectos.component';
-import { ContactoComponent } from './contacto/contacto.component';
 import { ResponsiveDirective } from './directivas/responsive.directive';
 
 @NgModule({
@@ -21,7 +20,6 @@ import { ResponsiveDirective } from './directivas/responsive.directive';
     ExperienciaComponent,
     HabilidadesComponent,
     ProyectosComponent,
-    ContactoComponent,
     ResponsiveDirective
   ],
   imports: [
